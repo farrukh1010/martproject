@@ -1,12 +1,4 @@
-// import Image from "next/image";
 
-// export default function Home() {
-//   return (
-//     <div>farrukh zaman
-
-//     </div>
-//   );
-// }
    "use client"
    import { useEffect, useState } from 'react';
    import Navbar from '@/app/components/Navbar';
