@@ -1,13 +1,16 @@
+
 import React from 'react';
 
+interface ProductData {
+  id: number;
+  title: string;
+  price: number;
+  image: string;
+}
+
 interface ProductProps {
-  product: {
-    id: number;
-    title: string;
-    price: number;
-    image: string;
-  };
-  addToCart: (product: { id: number; title: string; price: number; image: string }) => void;
+  product: ProductData; // Define product as a ProductData type
+  addToCart: (product: ProductData) => void; // Define addToCart as a function with ProductData parameter
 }
 
 const Product: React.FC<ProductProps> = ({ product, addToCart }) => {
@@ -27,3 +30,4 @@ const Product: React.FC<ProductProps> = ({ product, addToCart }) => {
 };
 
 export default Product;
+
